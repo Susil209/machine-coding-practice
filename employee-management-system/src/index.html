@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header class="header">
+        <h1>Employee Management System</h1>
+        <button class="createEmployee">Add Employee</button>
+      </header>
+    </div>
+
+    <div class="employee">
+      <div class="employee__names">
+        <span class="employee__names--title">Employee List</span>
+        <div class="employee__names--list"></div>
+      </div>
+
+      <div class="employee__single">
+        <span class="employee__single--title">Employee Information
+            <button class="updateEmployee">Update Employee</button>
+        </span>
+        <div class="employee__single--info"></div>
+      </div>
+    </div>
+
+    <div class="addEmployee">
+      <form class="addEmployee__create">
+        Add/Update a new Employee
+        <div>
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            required
+          />
+          <input type="text" name="lastName" placeholder="Last Name" required />
+        </div>
+        <input type="text" name="imageUrl" placeholder="Image URL (Optional)" />
+        <input type="email" name="email" placeholder="Email" required />
+        <input
+          type="number"
+          name="contactNumber"
+          placeholder="Contact"
+          required
+        />
+        <input type="number" name="salary" placeholder="Salary" required />
+        <input type="text" name="address" placeholder="Address" required />
+        <input
+          type="date"
+          name="dob"
+          placeholder="Date of Birth"
+          class="addEmployee__create--dob"
+          required
+        />
+        <input
+          type="submit"
+          class="addEmployee__create--submit"
+          value="Submit"
+        />
+      </form>
+    </div>
+
+    
+    <script src="./app.js"></script>
+  </body>
+</html>
